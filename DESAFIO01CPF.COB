@@ -1,0 +1,20 @@
+      ****************************************
+      * AUTHOR: JEFF LUCAS
+      * DATE: JUN 2021
+      * OBJETIVO: RECEBER NUMEROS DE CPF E IMPRIMIR MASCARA OK
+      ****************************************
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. DESAFIO01CPF.
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+           DECIMAL-POINT IS COMMA.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WRK-NUM PIC X(11) VALUE ZEROS.
+       77 WRK-CPF PIC 999.999.999/99.
+       PROCEDURE DIVISION.
+           ACCEPT WRK-NUM FROM CONSOLE.
+           MOVE WRK-NUM TO WRK-CPF.
+           DISPLAY 'CPF: ' WRK-CPF.
+           STOP RUN.
