@@ -1,17 +1,12 @@
       ******************************************************************
-      * Author:
-      * Date:
-      * Purpose:
-      * Tectonics: cobc
+      * Author:  JEFF LUCAS
+      * Date:    JUN 2021
+      * Purpose: MOSTRAR STRING HELLO JEFF
       ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. YOUR-PROGRAM-NAME.
+       PROGRAM-ID. PROGCOB01.
+       ENVIRONMENT DIVISION.
        DATA DIVISION.
-       FILE SECTION.
-       WORKING-STORAGE SECTION.
        PROCEDURE DIVISION.
-       MAIN-PROCEDURE.
-            DISPLAY "Hello world"
-            STOP RUN.
-       END PROGRAM YOUR-PROGRAM-NAME.
-
+           DISPLAY 'HELLO JEFF'.
+           STOP RUN.
