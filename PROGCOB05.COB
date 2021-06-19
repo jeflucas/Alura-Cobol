@@ -16,7 +16,10 @@
            ACCEPT WRK-NUM2 FROM CONSOLE.
            DISPLAY 'N1 = ' WRK-NUM1.
            DISPLAY 'N2 = ' WRK-NUM2.
-           DISPLAY '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'.
+           DISPLAY '-=-=-=-= SOMA -=-=-=-=-=-=-=-=-=-=-'.
            ADD WRK-NUM1 WRK-NUM2 TO WRK-RESULT.
-           DISPLAY 'SOMA = ' WRK-RESULT.
+            DISPLAY 'SOMA = ' WRK-RESULT.
+           DISPLAY '-=-=-=-= SUBSTRACAO -=-=-=-=-=-=-=-=-=-=-'.
+           SUBTRACT WRK-NUM1 FROM WRK-NUM2 GIVING WRK-RESULT.
+            DISPLAY 'SUBTRACAO = ' WRK-RESULT.
            STOP RUN.
