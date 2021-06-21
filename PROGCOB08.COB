@@ -1,0 +1,34 @@
+
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID.   PROGCOB08.
+       AUTHOR.       JEFF LUCAS.
+       DATE-WRITTEN. JUN2021.
+      *OBJETIVO: USAR O EVALUATE AO INVES DO IF/ELSE/END-IF.
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+           DECIMAL-POINT IS COMMA.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WRK-N1 PIC 9(02) VALUE ZEROS.
+       77 WRK-N2 PIC 9(02) VALUE ZEROS.
+       77 WRK-TT PIC 9(03).
+       77 WRK-MD PIC 9(02)V99.
+       PROCEDURE DIVISION.
+           DISPLAY 'INFORME N1:'
+           ACCEPT WRK-N1.
+           DISPLAY 'INFORME N2: '
+           ACCEPT WRK-N2.
+           ADD WRK-N1 WRK-N2 GIVING WRK-TT.
+           COMPUTE WRK-MD = (WRK-N1 + WRK-N2) / 2.
+           DISPLAY 'TOTAL: ' WRK-TT.
+           DISPLAY 'MEDIA: ' WRK-MD.
+           EVALUATE WRK-MD
+               WHEN 7 THRU 10
+                   DISPLAY 'APROVADO'
+               WHEN 4 THRU 6
+                   DISPLAY 'RECUPERACAO'
+               WHEN OTHER
+                   DISPLAY 'REPROVADO'
+           END-EVALUATE.
+           STOP RUN.
